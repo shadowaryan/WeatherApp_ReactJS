@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Calendar } from 'antd';
 import { Row, Col} from 'antd';
+import dayjs from 'dayjs'
 
 const API_KEY = "430990587adc4adab11222906230104";
 
@@ -67,12 +68,18 @@ function ForecastData(props) {
         console.log(value.format('YYYY-MM-DD'), mode);
     };
 
+    const dateFullCellRender = (e) => {
+        if(e > dayjs().add(7, 'day')){
+            return null
+        }
+    } 
+
   
    
 
     return (
         <div>
-            <Calendar 
+            <Calendar
             dateCellRender={dateCellRender}
             onPanelChange={onPanelChange} 
             />
