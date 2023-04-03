@@ -10,9 +10,7 @@ function Temperature(props) {
   const [wind_dir, setWind_dir] = useState();
   const [humidity, setHumidity] = useState();
 
-//   wind_kph
-// wind_dir
-// humidity
+
 
   const API_KEY = "430990587adc4adab11222906230104";
   
@@ -47,20 +45,13 @@ function Temperature(props) {
         </Row>
         <Row align="center" style={{ marginTop: 30 }}>
       <Col >
-      {/* <Row style={{ marginRight: 0 }}> */}
-        Humidity - {humidity} %
-        Wind Speed - {wind_kph} km/H
+        Humidity - {humidity} % |
+        Wind Speed - {wind_kph} km/H |
         Wind Direction - {wind_dir}
-      {/* </Row> */}
       </Col >
     </Row>
         
-        
-      {/* <input
-        type="text"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        />*/} 
+    
     </>
   );
 }

@@ -4,7 +4,7 @@ import Temperature from "./Temperature";
 import { Cascader } from 'antd';
 import { Row, Col} from 'antd';
 import ForecastData from "./ForcastData";
-// import Cal from "./Cal";
+
 
 const CitySearchBar = () => {
   const [cityName, setcityName] = useState("");
@@ -50,7 +50,8 @@ const CitySearchBar = () => {
     </Row>
     <Temperature city_name={cityName}/>
     <ForecastData city_name={cityName}/>
-    {/* <Cal/> */}
+    
+    
      
     </div>
   );

@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Input, Space } from 'antd';
 import './App.css';
 import react from 'react'
 import { Row, Col} from 'antd';
 import CitySearch from './CitySearch';
-import Temperature from './Temperature';
+import 'antd/dist/reset.css';
 
 
 // const { Search } = Input;
@@ -16,7 +14,7 @@ function App() {
     <>
     <CitySearch/>
     
-    <Row align="center" style={{ marginTop: 60 }}>
+    {/* <Row align="center" style={{ marginTop: 60 }}>
       <Col span={2}>1</Col>
       <Col span={2}>2</Col>
       <Col span={2}>3</Col>
@@ -24,7 +22,7 @@ function App() {
       <Col span={2}>5</Col>
       <Col span={2}>6</Col>
       <Col span={2}>7</Col>
-    </Row>
+    </Row> */}
     
     
    </>
